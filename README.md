@@ -1,9 +1,9 @@
 # Fault Detection: Heartbeat tactic
 
 ## What is Heartbeat tactic?
-- To allow processes to monitor availability of a critical component.
+- The Heartbeat tactic is a crucial strategy for ensuring the availability and reliability of critical components in complex systems.
 - The HeartbeatSender sends a heartbeat message periodically.
-- The HeartbeatReceiver receives the heartbeat, updates the last received time of a heartbeat message is updated.
+- The HeartbeatReceiver receives the heartbeat, updates the last received time of a heartbeat message.
 
 ## Objective:
 Implement the “Heartbeat” Tactic for improving the availability of a self-driving (autonomous) car. The implementation is minimum prototyping of the tactic than full implementation of a self-driving car.
@@ -18,7 +18,7 @@ Implement the “Heartbeat” Tactic for improving the availability of a self-dr
 - Rule 1: Do not embed a failure in a static if statement. The failure must be random and it must cause the process crash, avoid making the process sleep.
 - Rule 2: Implement send/receive/monitoring functions on different processes 
 - Rule 3: Select a relevant domain: Monitoring connections, Monitoring process, … 
-- Rule 4: Use inter-process communication mechanisms and remote method invocations; solutions based on networking protocols (e.g. UPD etc.) are not considered for this assignment.
+- Rule 4: Use inter-process communication mechanisms and remote method invocations; solutions based on networking protocols (e.g. UDP etc.) are not considered for this assignment.
 
 ## Modules
 - Faulthandler: Handling the error in log file
